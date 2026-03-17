@@ -1,0 +1,623 @@
+/* header */
+
+header {
+  background-color: #05203e;
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 39px;
+}
+
+header a {
+  width: auto;
+  height: auto;
+}
+
+.logo {
+  height: 52px;
+  width: 95px;
+}
+
+nav {
+  width: 116px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav i {
+  cursor: pointer;
+  color: white;
+}
+
+.search-container {
+  display: flex;
+  width: 100%;
+  max-width: 639px;
+  height: 36px;
+  background-color: white;
+  border: 2px solid #007bff;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.search-input {
+  flex-grow: 1;
+  border: none;
+  padding-left: 20px;
+  color: #333;
+  outline: none;
+}
+
+.search-button {
+  background-color: #007bff;
+  border: none;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.search-button i {
+  color: white;
+}
+
+.search-button::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+
+/* burger menu */
+header .menu {
+  width: 44px;
+  height: 44px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-direction: column;
+}
+
+header .menu span {
+  display: block;
+  width: 100%;
+  background-color: white;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.burgerMenu {
+  position: absolute;
+  z-index: 99;
+  width: 95%;
+  left: 2.5%;
+  top: 60px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  border: solid 2px grey;
+
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+
+.burgerMenu.dropDown {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.burgerMenu ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.burgerMenu ul li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 4px 0px;
+  height: 20px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.burgerMenu ul li a {
+  color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.burgerMenu ul li a i {
+  margin-right: 3px;
+}
+
+/* section */
+
+h1 {
+  width: 163px;
+  color: white;
+}
+
+.title1 {
+  margin: auto;
+  width: 200px;
+  margin-top: 37px;
+  margin-bottom: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title1 img {
+  width: 30px;
+  height: 30px;
+}
+
+.sectionContainer {
+  width: 1343px;
+  height: 209px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sectionContainer a {
+  width: 330px;
+  height: 100%;
+}
+
+.sectionContainer a div {
+  width: 330px;
+  height: 100%;
+  background-color: #05203e;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sectionContainer div span {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 9px;
+}
+
+.sectionContainer div img {
+  transition: transform 0.5s ease;
+}
+
+.sectionContainer a:hover img {
+  transform: scale(1.1);
+}
+
+.sectionContainer .card4 img {
+  width: 270px;
+}
+
+.title2,
+.title3,
+.title4,
+.title5 {
+  margin: auto;
+  width: 70%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 49px;
+  white-space: nowrap;
+}
+
+.title2 h2,
+.title3 h2,
+.title4 h2,
+.title5 h2 {
+  font-size: clamp(30px, 4vw, 30px);
+  color: #0069da;
+  margin: 0px 20px;
+}
+
+.title2 div,
+.title3 div,
+.title4 div,
+.title5 div {
+  flex: 1;
+  height: 2px;
+  background-color: #282828;
+}
+
+.title3 span,
+.title4 span {
+  color: white;
+}
+
+/* DIFFERENT CARD SECTIONS */
+
+.onSale,
+.suggestedProducts,
+.prebuiltPC {
+  width: 1345px;
+  height: 361px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+/* CARD ARROW STYLE */
+.arrowDiv {
+  position: absolute;
+  z-index: 999;
+  height: 42px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardArrow {
+  z-index: 999;
+  width: 42px;
+  height: 42px;
+  border: solid 2px #565656;
+  border-radius: 50%;
+  background-color: #0d0d0d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cardArrow i {
+  color: #0069da;
+}
+
+/* Card style */
+.Card {
+  width: 254.57px;
+  height: 360px;
+  padding: 10px;
+  border: 2px solid #565656;
+  border-radius: 10px;
+  position: relative;
+}
+
+.Card img {
+  width: 225px;
+  height: 212px;
+  object-fit: contain;
+  overflow-y: hidden;
+}
+
+.Card h3 {
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.status {
+  font-size: 11px;
+  font-weight: 500;
+  color: #0069da;
+  margin: 24px 0px 14px 0px;
+}
+
+.current-price {
+  color: white;
+  font-size: 17px;
+}
+
+.original-price {
+  color: red;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.buy {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 9px;
+}
+
+.Card .buy i {
+  cursor: pointer;
+  color: white;
+}
+
+.Card .buy button {
+  width: 163px;
+  height: 31px;
+  background-color: #0069da;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* favorite button style */
+
+.Card .favorite-icon {
+  color: #4979d1;
+  position: absolute;
+  left: 8px;
+  top: 20px;
+  z-index: 9999999;
+  cursor: pointer;
+}
+
+.favorite-icon.active {
+  color: #ff4757;
+  font-weight: 900;
+}
+
+/* Preorder badge */
+
+.Preorder {
+  width: 116px;
+  height: 32px;
+  border-radius: 7px;
+  background-color: #00da3a;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* New badge */
+.New {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  background-color: #0069da;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sale badge */
+.Sale {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #ff1a1a;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Badge font style */
+.Preorder span,
+.New span,
+.Sale span {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* TOP BRANDS SECTION STYLE */
+
+.topBrands {
+  width: 1345px;
+  height: 253px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* top brand card style */
+
+.topBrand {
+  width: 444px;
+  height: 250px;
+  border: solid 2px #565656;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.topBrand div {
+  width: 245px;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.topBrand div .productLogo {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.topBrand .productImg {
+  height: auto;
+  width: 170px;
+  object-fit: fill;
+}
+
+.topBrand button {
+  width: 230px;
+  height: 51px;
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  background-color: #0069da;
+  cursor: pointer;
+}
+
+/* footer style */
+footer {
+  height: auto;
+  background-color: #05203e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 122px;
+}
+
+.contact,
+.socialMedia,
+.termsConditions {
+  margin: 20px 0px;
+}
+
+footer .websiteInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 66px;
+  flex-wrap: wrap;
+}
+
+footer .contact {
+  width: 256px;
+  height: 167px;
+}
+
+footer .termsConditions {
+  width: 406px;
+  height: 197px;
+}
+
+footer .socialMedia {
+  width: 372px;
+  height: 197px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h4 {
+  font-size: 35px;
+  color: white;
+}
+
+footer .contact ul li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+footer .termsConditions ul {
+  list-style: disc;
+}
+
+footer .termsConditions ul li {
+  font-size: 20px;
+  margin: 10px 0px 10px 25px;
+}
+
+footer .socialMedia span {
+  text-align: center;
+  margin: 10px 0px;
+  color: white;
+  font-size: 22px;
+}
+
+footer .socialMedia .socials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 329px;
+  height: 77px;
+}
+footer .socialMedia .socials i {
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 420px) {
+
+  .title1, .title2, .title3, .title4, .title5{
+    width: 95%;
+  }
+
+  header .menu {
+    display: flex;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .search-container {
+    display: none;
+  }
+
+  footer .websiteInfo {
+    margin: 0px 33px;
+  }
+
+  .onSale,
+  .suggestedProducts,
+  .prebuiltPC,
+  .topBrands,
+  .sectionContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 15px 20px;
+    height: auto;
+  }
+
+  .topBrands .topBrand {
+    width: 444px;
+    height: 250px;
+  }
+
+  .sectionContainer a {
+    height: 209px;
+  }
+
+  .arrowDiv {
+    display: none;
+  }
+}
